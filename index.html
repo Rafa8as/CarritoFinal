@@ -154,7 +154,22 @@
 
         </div>
     </main>
+   
+   <script> let url = 'https://jsonplaceholder.typicode.com/users '
+    fetch (url )
+    .then( (response) => response.json() )
+    .then(data => 
+        console.log(data)
+    )
+    .catch(error => 
+        console.log(error)
+    )
+    const mostrarData = (data) => {
+        console.log (data)
+    }
 
+    </script>
+    
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
