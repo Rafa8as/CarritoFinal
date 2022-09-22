@@ -21,7 +21,7 @@
     <header>
         <div class="container">
             <div class="row justify-content-between mb-5">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top" readonly style="background-color: #B1B2FF;">
                     <a class="navbar-brand" href="index.html">Supermercadito</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,10 @@
     <br>
 
     <main>
-        <div class="container">
+        <div class="container" readonly style="background-color: #EEF1FF;">
             <div class="row mt-3">
                 <div class="col">
-                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <h2 class="d-flex justify-content-center mb-3"  readonly style="background-color: #AAC4FF;">Realizar Compra</h2>
                     <form id="procesar-pago" action="#" method="post">
                         <div class="form-group row" id="data">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
 
-                        <div id="carrito" class="form-group table-responsive" >
+                        <div id="carrito" class="form-group table-responsive" readonly style="background-color:#F7F6DC;" >
                             <table class="table" id="lista-compra" >
                                 <thead>
                                     <tr>
@@ -78,9 +78,9 @@
                                     <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
-                                    <th colspan="4" scope="col" class="text-right">IGV :</th>
+                                    <th colspan="4" scope="col" class="text-right">IVA :</th>
                                     <th scope="col">
-                                        <p id="igv"></p>
+                                        <p id="iva"></p>
                                     </th>
                                     <!-- <th scope="col"></th> -->
                                 </tr>
@@ -123,7 +123,7 @@
 
 
     </div>
-    <script> let url = 'https://jsonplaceholder.typicode.com/users '</script>
+    <script> let url = 'https://jsonplaceholder.typicode.com/users '
     
 fetch (url )
 .then( (response) => response.json() )
@@ -141,7 +141,7 @@ const mostrarData = (data) => {
     }
     document.getElementById('data').innerHTML = body
 }
-
+</script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>

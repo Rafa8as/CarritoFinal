@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
@@ -16,10 +17,10 @@
 
 <body>
 
-    <header>
+    <header >
         <div class="container">
             <div class="row align-items-stretch justify-content-between">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top p-3 mb-2" readonly style="background-color: #B1B2FF;">
                     <a class="navbar-brand" href="#">Supermercadito</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
-                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                <img src="imagenes/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
                                     width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false"></img>
                                 <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
@@ -56,52 +57,56 @@
         </div>
     </header>
 
-    <main>
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
-            <h1 class="display-4 mt-4">Lista de Productos</h1>
+    <main class="fondo" readonly style="background-color: #EEF1FF;">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center p-3 mb-2" readonly style="background-color: #AAC4FF;">
+            <h1 class="display-4 mt-4 ">Lista de Productos</h1>
+           
             <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
         </div>
 
         <div class="container" id="lista-productos">
             
-            <div class="card-deck mb-3 text-center">
+            <div class="card-deck mb-3 text-center" >
                 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2" readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Asado</h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/asado.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">1600</span></h1>
+                        <img src="imagenes/asado.jpg" class="card-img-top" height="350px"
+                        width="200px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">1600</span></h1>
 
                       
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito " readonly style="background-color:#FFA500;" data-id="1">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2"  readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Leche </h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/leche.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">250</span></h1>
+                        <img src="imagenes/leche.jpg" class="card-img-top" height="350px"
+                        width="200px" >
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">250</span></h1>
 
                       
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" readonly style="background-color:#FFA500;" data-id="2">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2"  readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Cerveza</h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/cerveza.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">240</span></h1>
+                        <img src="imagenes/cerveza.jpg" class="card-img-top" height="350px"
+                        width="200px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">240</span></h1>
 
                         
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" readonly style="background-color:#FFA500;" data-id="3">Comprar</a>
                     </div>
                 </div>
 
@@ -109,41 +114,44 @@
 
             <div class="card-deck mb-3 text-center">
                 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2"  readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Yerba</h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/yerba.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">650</span></h1>
+                        <img src="imagenes/yerba.jpg" class="card-img-top" height="350px"
+                        width="200px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">650</span></h1>
 
                    
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito"readonly style="background-color:#FFA500;" data-id="4">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2"  readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Manteca</h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/manteca.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">300</span></h1>
+                        <img src="imagenes/manteca.jpg" class="card-img-top" height="350px"
+                        width="200px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">300</span></h1>
 
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" readonly style="background-color:#FFA500;" data-id="5">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
+                <div class="card mb-4 shadow-sm" readonly style="background-color:#F7F6DC;">
+                    <div class="card-header p-3 mb-2"  readonly style="background-color: #ec997577;">
                         <h4 class="my-0 font-weight-bold">Gaseosa</h4>
                     </div>
                     <div class="card-body">
-                        <img src="imagenes/gaseosa.jpg" class="card-img-top">
-                        <h1 class="card-title pricing-card-title precio">$. <span class="">350</span></h1>
+                        <img src="imagenes/gaseosa.jpg" class="card-img-top" height="350px"
+                        width="200px">
+                        <h1 class="card-title pricing-card-title precio">$ <span class="">350</span></h1>
 
                         
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" readonly style="background-color:#FFA500;" data-id="6">Comprar</a>
                     </div>
                 </div>
 
@@ -154,6 +162,7 @@
 
         </div>
     </main>
+ 
    
    <script> let url = 'https://jsonplaceholder.typicode.com/users '
     fetch (url )
